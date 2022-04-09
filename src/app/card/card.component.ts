@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 
 export class CardComponent implements OnInit {
-  @Input() cardquote:any = 'Lock up your libraries if you like; but there is no gate, no lock, no bolt that you can set upon the freedom of my mind.';
+  @Input() cardquote = 'Lock up your libraries if you like; but there is no gate, no lock, no bolt that you can set upon the freedom of my mind.';
   @Input() cardauthor = 'Virginia Woolf';
   @Input() cardeditor = 'Jaffar Hussein'
 

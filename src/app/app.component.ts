@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Quotev';
-  items:any=[];
+  items:any=[{quote:"Lock up your libraries if you like; but there is no gate, no lock, no bolt that you can set upon the freedom of my mind.",
+author:"Virginia Woolf",editor:" HananHussein"}];
 
   AddnewQuote = (obj: any) => {
     console.log(obj);
