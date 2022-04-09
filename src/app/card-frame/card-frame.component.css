@@ -3,6 +3,7 @@
     width: 100vh;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 100%);
     border: 2px solid #FFFFFF;
+    overflow: auto;
     box-sizing: border-box;
     backdrop-filter: blur(40px);
 }
