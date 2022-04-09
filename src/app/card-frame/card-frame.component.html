@@ -1,6 +1,6 @@
 <div class="container">
     <div class="frame p-2" *ngFor="let item of quoteItems">
-        <app-card [quote]="getQuote(item, 'quote')" [author]="getQuote(item, 'author') " [editor]="getQuote(item, 'editor') ">
+        <app-card [cardquote]="getQuote(item, 'quote') " [cardauthor]="getQuote(item, 'author') " [cardeditor]="getQuote(item, 'editor') ">
 
         </app-card>
     </div>
