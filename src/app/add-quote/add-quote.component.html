@@ -1,18 +1,19 @@
 <div class="container  d-flex ">
-    <form class="formBorder p-5">
-        <div class="d-flex flex-column">
+    <form class="formBorder p-5" #loginForm="ngForm">
+        <div class="d-flex flex-column form-group">
             <div class="mb-3">
-                <textarea class="areaCurve bg-transparent" name="" id="" cols="50" rows="7" placeholder="Enter Quote"></textarea>
+                <textarea class="areaCurve bg-transparent form-control" [(ngModel)]="quoteModel.quote" name="quote" id="" cols="50" rows="7" placeholder="Enter Quote"></textarea>
 
             </div>
-            <div class="mb-3"> <input class="inputCurve bg-transparent p-2" type="text" placeholder="Enter the name of the author">
-            </div>
             <div class="mb-3">
-                <input class="inputCurve bg-transparent p-2" type="text" placeholder="Enter the name of the editor">
+                <input class="inputCurve editor bg-transparent p-2 " [(ngModel)]="quoteModel.author" name="author" type="text " placeholder="Enter the name of the author ">
+            </div>
+            <div class="mb-3 ">
+                <input class="inputCurve editor bg-transparent p-2  " type="text" [(ngModel)]="quoteModel.editor" name="editor" placeholder="Enter the name of the editor ">
 
             </div>
             <div class=" d-flex justify-content-center mt-2 ">
-                <button class="btn btn-primary">Submit</button>
+                <button class="btn btn-primary " (click)="SubmitBtn() ">Submit</button>
 
             </div>
         </div>

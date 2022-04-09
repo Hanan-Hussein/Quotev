@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Quotev';
+  items:any=[];
+
+  AddnewQuote = (obj: any) => {
+    console.log(obj);
+    this.items.push(obj);
+
+  };
 }
