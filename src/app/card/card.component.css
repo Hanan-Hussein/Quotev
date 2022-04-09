@@ -1,8 +1,8 @@
 .cardFrame {
     background: #FFFFFF;
-    height: 20vh;
+    /* height: 20vh; */
 }
 
-.user {
-    width: 2vw;
+.username {
+    color: #D62828;
 }
