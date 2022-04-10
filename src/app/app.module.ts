@@ -9,6 +9,7 @@ import { CardComponent } from './card/card.component';
 import { CardFrameComponent } from './card-frame/card-frame.component';
 import { QuoteDescriptionComponent } from './quote-description/quote-description.component';
 import { TimeCountPipe } from './time-count.pipe';
+import { HighestVoteDirective } from './highest-vote.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TimeCountPipe } from './time-count.pipe';
     CardComponent,
     CardFrameComponent,
     QuoteDescriptionComponent,
-    TimeCountPipe
+    TimeCountPipe,
+    HighestVoteDirective
   ],
   imports: [
     BrowserModule,

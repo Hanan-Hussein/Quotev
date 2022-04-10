@@ -1,15 +1,19 @@
-   <div class="d-flex justify-content-end">
+<div>
+<div class="d-flex justify-content-end" >
             <p> ~ {{descquotes.author}}</p>
 
         </div>
-        <div class="d-flex mb-2">
+        <div class="d-flex mb-2" >
             <img src="../../assets/user.png" class="user mx-2" alt="">
             <p class="text-center my-2 username">{{descquotes.editor}}</p>
         </div>
         <div class="d-flex">
-            <img src="../../assets/like.svg" (click)='upVoting()' class=" mx-2" alt="">
-            <p class="my-2 ">{{like}}</p>
+            <!-- <!-- <img src="../../assets/like.svg" (click)='upVoting()' class=" mx-2" alt="">
+            <p class="my-2 ">{{descquotes.like}}</p>
             <img src="../../assets/dislike.svg" (click)='downVoting()' class=" mt-2 mx-2" alt="">
-            <p class="my-2">{{dislike}}</p>
-            <p>{{descquotes.created|timeCount}}</p>
+            <p class="my-2">{{descquotes.dislike}}</p> -->
         </div>
+     
+        <p>{{descquotes.created|timeCount}}</p>
+</div>
+

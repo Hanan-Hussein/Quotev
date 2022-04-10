@@ -1,12 +1,17 @@
 <div class="container">
-    <div class="frame p-2">
-        <div *ngFor="let item of quoteItems">
-            <app-card [fetchquotes]="item" >
+    <div class="d-flex justify-content-between ">
+
+    <div class="frame p-2 mr-5">
+            <app-card [fetchquotes]="items" >
             </app-card>
 
         </div>
+        <div>   
+             <app-add-quote (newQuote)="AddnewQuote($event)"></app-add-quote>
+        </div>
 
-    </div>
+</div>
+
 </div>
 <!-- 
 [cardauthor]="getQuote(item, 'author')"  

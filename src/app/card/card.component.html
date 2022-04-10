@@ -1,7 +1,7 @@
 <div class="container ">
-    <div class="cardFrame mt-2 mb-3 p-4">
-            <p class="mb-4">"{{fetchquotes.quote}}"</p>
-            <app-quote-description [descquotes]="fetchquotes"></app-quote-description>
+    <div class="cardFrame mt-2 mb-3 p-4" *ngFor="let quo of fetchquotes">
+                <p class="mb-4">"{{quo.quote}}"</p>
+            <app-quote-description [descquotes]='quo'></app-quote-description>
 
 
             <!-- <app-quote-description [descauthor]='fetchquotes.author' [desceditor]='fetchquotes.editor' [descdate]='fetchquotes.createdDate'></app-quote-description> -->

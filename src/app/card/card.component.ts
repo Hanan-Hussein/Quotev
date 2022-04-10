@@ -8,16 +8,15 @@ import { Component, OnInit, Input } from '@angular/core';
 
 export class CardComponent implements OnInit {
 
-  @Input() fetchquotes:any;
-
-  quoteItems:any=[]
+  @Input() fetchquotes:any=[];
+  item:any=[]
 
     constructor() {
-
      }
 
 ngOnInit(): void {
-
+  
+  
 }
 
 

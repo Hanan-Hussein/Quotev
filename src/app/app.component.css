@@ -3,13 +3,7 @@
                 padding: 0;
             }
             
-            .bgColor {
-                background: rgb(255, 211, 118);
-                background: linear-gradient(90deg, rgba(255, 211, 118, 1) 4%, rgba(159, 219, 166, 1) 80%);
-                height: 100vh;
-                /* transform: rotate(-180deg); */
-                /* z-index: -1; */
-            }
+           
             /* .overlay {
             background: #000000;
             mix-blend-mode: overlay;
