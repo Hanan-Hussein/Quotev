@@ -1,9 +1,11 @@
 <div class="container">
     <div class="frame p-2">
         <div *ngFor="let item of quoteItems">
-            <app-card [cardquote]="getQuote(item, 'quote') " [cardauthor]="getQuote(item, 'author') " [cardeditor]="getQuote(item, 'editor') ">
+            <app-card [cardquote]="getQuote(item, 'quote') " [cardauthor]="getQuote(item, 'author')"  [cardeditor]="getQuote(item, 'editor')">
 
             </app-card>
+            <!-- <app-quote-description  [cardauthor]="getQuote(item, 'author') " [cardeditor]="getQuote(item, 'editor') "></app-quote-description> -->
+
         </div>
 
     </div>
