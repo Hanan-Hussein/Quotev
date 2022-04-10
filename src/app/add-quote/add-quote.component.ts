@@ -18,12 +18,11 @@ export class AddQuoteComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  SubmitBtn = () => {
+  onSubmit = () => {
     if (this.quoteModel.quote === '' || this.quoteModel.author === '' || this.quoteModel.editor==='') {
       return;
     }
-    this.newQuote.emit({ quote: this.quoteModel.quote, author: this.quoteModel.author,editor: this.quoteModel.author });
-
+    this.newQuote.emit({ quote: this.quoteModel.quote, author: this.quoteModel.author,editor: this.quoteModel.editor });
   };
   
 }
