@@ -6,8 +6,9 @@ import { Component, OnInit,Input, Output,EventEmitter} from '@angular/core';
   styleUrls: ['./quote-description.component.css']
 })
 export class QuoteDescriptionComponent implements OnInit {
-  @Input() descauthor = 'Virginia Woolf';
-  @Input() desceditor = 'Jaffar Hussein'
+
+  @Input() descquotes:any;
+
   like=0;
   dislike=0;
   @Output() vote=new EventEmitter()

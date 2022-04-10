@@ -1,21 +1,11 @@
 <div class="container ">
     <div class="cardFrame mt-2 mb-3 p-4">
-        <p class="mb-4">"{{cardquote}}"</p>
-        <app-quote-description [descauthor]='cardauthor' [desceditor]='cardeditor'></app-quote-description>
-        <!-- <div class="d-flex justify-content-end">
-            <p> ~ {{cardauthor}}</p>
+            <p class="mb-4">"{{fetchquotes.quote}}"</p>
+            <app-quote-description [descquotes]="fetchquotes"></app-quote-description>
 
-        </div>
-        <div class="d-flex mb-2">
-            <img src="../../assets/user.png" class="user mx-2" alt="">
-            <p class="text-center my-2 username">{{cardeditor}}</p>
-        </div>
-        <div class="d-flex">
-            <img src="../../assets/like.svg" class=" mx-2" alt="">
-            <p class="my-2 ">0</p>
-            <img src="../../assets/dislike.svg" class=" mt-2 mx-2" alt="">
-            <p class="my-2">0</p>
-        </div> --> 
+
+            <!-- <app-quote-description [descauthor]='fetchquotes.author' [desceditor]='fetchquotes.editor' [descdate]='fetchquotes.createdDate'></app-quote-description> -->
+      
     </div>
 
 </div>

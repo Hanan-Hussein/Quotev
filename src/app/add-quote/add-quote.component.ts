@@ -13,7 +13,7 @@ export class AddQuoteComponent implements OnInit {
 
   @Output() newQuote = new EventEmitter();
   constructor() {
-    this.quoteModel = new Quotes("","","");
+    this.quoteModel = new Quotes("","","",new Date);
   }
 
   ngOnInit(): void {
@@ -22,7 +22,7 @@ export class AddQuoteComponent implements OnInit {
     if (this.quoteModel.quote === '' || this.quoteModel.author === '' || this.quoteModel.editor==='') {
       return;
     }
-    this.newQuote.emit({ quote: this.quoteModel.quote, author: this.quoteModel.author,editor: this.quoteModel.editor });
+    this.newQuote.emit({ quote: this.quoteModel.quote, author: this.quoteModel.author,editor: this.quoteModel.editor,created:this.quoteModel.createdDate });
   };
   
 }

@@ -11,6 +11,7 @@ export class CardFrameComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 getQuote(quote:any,str:string){
 return quote[str]

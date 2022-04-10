@@ -8,6 +8,7 @@ import { AddQuoteComponent } from './add-quote/add-quote.component';
 import { CardComponent } from './card/card.component';
 import { CardFrameComponent } from './card-frame/card-frame.component';
 import { QuoteDescriptionComponent } from './quote-description/quote-description.component';
+import { TimeCountPipe } from './time-count.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { QuoteDescriptionComponent } from './quote-description/quote-description
     AddQuoteComponent,
     CardComponent,
     CardFrameComponent,
-    QuoteDescriptionComponent
+    QuoteDescriptionComponent,
+    TimeCountPipe
   ],
   imports: [
     BrowserModule,
