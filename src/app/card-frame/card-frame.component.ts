@@ -6,7 +6,8 @@ import { Component, OnInit,Input } from '@angular/core';
   styleUrls: ['./card-frame.component.css']
 })
 export class CardFrameComponent implements OnInit {
-@Input('ItemsQuote') quoteItems=[]
+@Input('ItemsQuote') quoteItems:any=[];
+// votes:any=[]
   constructor() { }
 
   ngOnInit(): void {
@@ -14,4 +15,5 @@ export class CardFrameComponent implements OnInit {
 getQuote(quote:any,str:string){
 return quote[str]
 }
+
 }

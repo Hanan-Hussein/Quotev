@@ -1,4 +1,4 @@
-import { Component, OnInit,Input } from '@angular/core';
+import { Component, OnInit,Input, Output,EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-quote-description',
@@ -8,9 +8,22 @@ import { Component, OnInit,Input } from '@angular/core';
 export class QuoteDescriptionComponent implements OnInit {
   @Input() descauthor = 'Virginia Woolf';
   @Input() desceditor = 'Jaffar Hussein'
+  like=0;
+  dislike=0;
+  @Output() vote=new EventEmitter()
+  
   constructor() { }
 
   ngOnInit(): void {
   }
-
+upVoting=()=>{
+  this.like++;
 }
+downVoting=()=>{
+  this.dislike++;
+}
+allVotes=()=>{
+  this.vote.emit({upvote:this.like})
+}
+}
+
