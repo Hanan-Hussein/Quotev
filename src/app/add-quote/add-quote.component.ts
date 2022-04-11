@@ -12,8 +12,6 @@ export class AddQuoteComponent implements OnInit {
   quoteParam='';
 
   @Output() newQuote = new EventEmitter();
-  @Output() deleteQuote=new EventEmitter<boolean>();
-
   constructor() {
     this.quoteModel = new Quotes("","","",new Date,0,0);
   }

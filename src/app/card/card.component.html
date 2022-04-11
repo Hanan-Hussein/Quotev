@@ -8,7 +8,7 @@
                 <ng-template #notHigh>
                     <p class="mb-4">"{{quo.quote}}"</p>
                 </ng-template>
-            <app-quote-description [descquotes]='quo'></app-quote-description>
+            <app-quote-description [descquotes]='quo' (deleteQuote)="removeQuote($event,i)"></app-quote-description>
             <div class="d-flex">
                 
                 <img src="../../assets/like.svg"(click)="upVoting(i)"  class=" mx-2" alt="">     

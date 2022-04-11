@@ -15,6 +15,7 @@ export class CardComponent implements OnInit {
   dislike = 0;
   popularVotes: number = 0;
   constructor() {
+    
   }
 
   ngOnInit(): void {
@@ -38,8 +39,8 @@ export class CardComponent implements OnInit {
   downVoting = (index: number) => {
     this.fetchquotes[index].dislike++;
   }
-  completegoal(isComplete: any, index: any) {
-    if (isComplete) {
+  removeQuote(del: any, index: any) {
+    if (del) {
       this.fetchquotes.splice(index,1);
     }
   }

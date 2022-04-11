@@ -12,8 +12,8 @@ export class QuoteDescriptionComponent implements OnInit {
   like=0;
   dislike=0;
   popularVotes:number=0;
+  @Output() deleteQuote=new EventEmitter<boolean>();
 
-  @Output() vote=new EventEmitter()
   
   constructor() {
     
@@ -23,9 +23,8 @@ export class QuoteDescriptionComponent implements OnInit {
 
     
   }
-
-topVoted(){
-
-}
+  QuoteDeleted(complete:boolean){
+    this.deleteQuote.emit(complete);
+  }
 }
 
