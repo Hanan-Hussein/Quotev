@@ -1,13 +1,13 @@
 <div class="container">
-    <div class="d-flex justify-content-between flex-wrap ">
+    <div class="d-flex justify-content-between quote ">
 
-    <div class="frame p-2 mr-5">
+    <div class="frame p-2 mr-5 frameQuote ">
             <app-card [fetchquotes]="items" >
             </app-card>
 
         </div>
-        <div>   
-             <app-add-quote (newQuote)="AddnewQuote($event)"></app-add-quote>
+        <div class="addQuote">   
+             <app-add-quote class="itemQuote" (newQuote)="AddnewQuote($event)"></app-add-quote>
         </div>
 
 </div>
