@@ -1,27 +1,68 @@
 # Quotev
+##### By Hanan Hussein Ibrahim
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+[<img width="1440" alt="Screenshot 2022-03-21 at 18 11 00" src="https://user-images.githubusercontent.com/36597096/162708235-6759f619-9298-4a2e-ad81-eaccd3fbc3e9.png">](https://quotev.herokuapp.com/)
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Table of Content
 
-## Build
++ [Description](#description)
++ [Behaviour Driven Development](#behaviour-driven-development)
++ [Requirement](#requirement)
++ [Technology Used](#technology-used)
++ [Authors Info](#authors-info)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Description
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Quotev is a fun website where one can input a quote, the authors name, and their name as the editors.The quote is posted and a user is able to upvote,downvote, delete and see the time lapsed since the quote was created. <br>
+The figma designs are available here [figma](https://www.figma.com/file/z0kYLHHQ5OtZUm0BZE33wA/Untitled)
 
-## Running end-to-end tests
+<img width="1440" alt="">
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+The live link is below:
+#### [live link](https://quotev.herokuapp.com/)
+
+### Behaviour Driven Development
+* A user can create a quote
+* One can view quotes
+* A user can delete a quote
+* A user can upvote and downvote a quote
+* A user can view lapsed since the quote was created
+## Installation
+* Clone the github repo
+* Make sure you have node.js installed in your machine
+* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+
+### Requirement
+
+* Either a computer,phone,tablet or an Ipad
+
+* Access to the Internet
+
+[Go Back to the top](#By-Hanan-Hussein-Ibrahim)
+## Technology Used
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML)
+* [JS](https://en.wikipedia.org/wiki/JavaScript)
+* [Angular](https://angular.io/)
+* [Type script](https://www.typescriptlang.org/)
+* [Bootstrap](https://getbootstrap.com/)
+
+
+
+[Go Back to the top](#By-Hanan-Hussein-Ibrahim)
+
+## Authors Info
+Can be reached by the email below for questions and comments 
+
+[Email](hanan.ibrahim@student.moringaschool.com)
+
+[Go Back to the top](#By-Hanan-Hussein-Ibrahim)
+## License
+Find the license information [here](https://github.com/Hanan-Hussein/Quotev/blob/master/LICENSE) 
