@@ -23,21 +23,7 @@ export class QuoteDescriptionComponent implements OnInit {
 
     
   }
-  popularVoted(quo:any){
-    for(let i=0;i<quo.length;i++){
-      if(quo[i].upVotes>this.popularVotes){
-        this.popularVotes=quo[i];
- 
-      }
-    }
- 
-  }
-upVoting=(index:number)=>{
-  this.descquotes[index].like++;
-}
-downVoting=(index:number)=>{
-  this.descquotes[index].dislike++;
-}
+
 topVoted(){
 
 }

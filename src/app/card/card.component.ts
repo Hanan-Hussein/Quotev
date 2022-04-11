@@ -8,16 +8,40 @@ import { Component, OnInit, Input } from '@angular/core';
 
 export class CardComponent implements OnInit {
 
-  @Input() fetchquotes:any=[];
-  item:any=[]
+  @Input() fetchquotes: any = [];
+  item: any = []
 
-    constructor() {
-     }
+  like = 0;
+  dislike = 0;
+  popularVotes: number = 0;
+  constructor() {
+  }
 
-ngOnInit(): void {
-  
-  
-}
+  ngOnInit(): void {
 
+
+  }
+  popularVoted() {
+    for (let i = 0; i < this.fetchquotes.length; i++) {
+      if (this.fetchquotes[i].like > this.popularVotes) {
+        this.popularVotes = this.fetchquotes[i].like;
+
+      }
+    }
+
+  }
+  upVoting = (index: number) => {
+    this.fetchquotes[index].like++;
+    this.popularVoted();
+
+  }
+  downVoting = (index: number) => {
+    this.fetchquotes[index].dislike++;
+  }
+  completegoal(isComplete: any, index: any) {
+    if (isComplete) {
+      this.fetchquotes.splice(index,1);
+    }
+  }
 
 }
