@@ -1,17 +1,17 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { interval, Observable, Observer } from 'rxjs';
-import { map } from 'rxjs/operators';
 
 
 @Pipe({
   name: 'timeCount'
 })
 export class TimeCountPipe implements PipeTransform {
-  transform(value: any, args?: any): any {
-        let todayDate: any = new Date();
+  transform(value:any): any {
+ 
+        // let todayDate:any = new Date();
 
-      const seconds = Math.floor((todayDate - value) / 1000);
-      if (seconds < 29) // less than 30 seconds ago will show as 'Just now'
+      const seconds = Math.abs((value) / 1000);
+      if (seconds < 10) // less than 30 seconds ago will show as 'Just now'
           return 'Just now';
       const intervals:any = {
           'year': 31536000,
@@ -24,7 +24,7 @@ export class TimeCountPipe implements PipeTransform {
       };
       let counter;
       for (const i in intervals) {
-          counter = Math.floor(seconds / intervals[i]);
+          counter = Math.floor(seconds/ intervals[i]);
           if (counter > 0)
               if (counter === 1) {
                   return counter + ' ' + i + ' ago'; // singular (1 day ago)

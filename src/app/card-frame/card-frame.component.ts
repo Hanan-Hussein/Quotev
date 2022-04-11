@@ -20,6 +20,7 @@ author:"Virginia Woolf",editor:" Hanan Hussein",created:new Date(2022,3,9),like:
   ngOnInit(): void {
   }
   AddnewQuote = (obj: any) => {
+    obj.created=new Date();
     this.items.unshift(obj);
     console.log(this.items);
 

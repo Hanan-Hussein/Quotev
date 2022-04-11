@@ -10,18 +10,21 @@ export class CardComponent implements OnInit {
 
   @Input() fetchquotes: any = [];
   item: any = []
-
+  interval: any
+  dates:any;
   like = 0;
   dislike = 0;
   popularVotes: number = 0;
   constructor() {
-    
+ 
   }
 
   ngOnInit(): void {
 
 
   }
+  
+  
   popularVoted() {
     for (let i = 0; i < this.fetchquotes.length; i++) {
       if (this.fetchquotes[i].like > this.popularVotes) {
