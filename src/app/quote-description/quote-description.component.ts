@@ -26,5 +26,8 @@ export class QuoteDescriptionComponent implements OnInit {
   QuoteDeleted(complete:boolean){
     this.deleteQuote.emit(complete);
   }
+  getTime(){
+    
+  }
 }
 

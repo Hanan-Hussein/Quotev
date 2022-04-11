@@ -23,6 +23,9 @@ export class AddQuoteComponent implements OnInit {
       return;
     }
     this.newQuote.emit({ quote: this.quoteModel.quote, author: this.quoteModel.author,editor: this.quoteModel.editor,created:this.quoteModel.createdDate,like:this.quoteModel.upVote,dislike:this.quoteModel.downVote });
+    this.quoteModel.author='';
+    this.quoteModel.editor='';
+    this.quoteModel.quote='';
   };
   
 }
