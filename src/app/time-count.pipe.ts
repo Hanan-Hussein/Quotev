@@ -11,8 +11,7 @@ export class TimeCountPipe implements PipeTransform {
         // let todayDate:any = new Date();
 
       const seconds = Math.abs((value) / 1000);
-      if (seconds < 10) // less than 30 seconds ago will show as 'Just now'
-          return 'Just now';
+     
       const intervals:any = {
           'year': 31536000,
           'month': 2592000,
