@@ -2,21 +2,34 @@
     <form class="formBorder p-5" #loginForm="ngForm"  (ngSubmit)="onSubmit(loginForm)">
         <div class="d-flex flex-column form-group">
             <div class="mb-3">
-                <textarea class="areaCurve bg-transparent form-control " [(ngModel)]="quoteModel.quote" name="quote" id="" cols="50" rows="7" placeholder="Enter Quote"></textarea>
-
+                <textarea class="areaCurve bg-transparent form-control " [(ngModel)]="quoteModel.quote" name="quote" id="" cols="50" rows="7" placeholder="Enter Quote" #quote="ngModel" required></textarea>
+                <div  *ngIf="(quote.dirty || quote.touched) && quote.invalid" class="text-danger bg-transparent form-control">
+                    <div *ngIf="quote.errors?.['required']">
+                        <span class="bg-transparent">  Quote is required.</span>
+                      </div>
+           
+            </div>
             </div>
             <div class="mb-3">
-                <input class="inputCurve editor bg-transparent p-2 form-control" [(ngModel)]="quoteModel.author" name="author" type="text " placeholder="Enter the name of the author " required>
-                <!-- <span class="form-error" *ngIf="!quoteModel.valid">
-                    Please fill all the fields to activate the submit button
-                  </span> -->
+                <input class="inputCurve editor bg-transparent p-2 form-control" [(ngModel)]="quoteModel.author" name="author" type="text " placeholder="Enter the name of the author " name="author"  #author="ngModel" required>
+                <div  *ngIf="(author.dirty || author.touched) && author.invalid" class="text-danger bg-transparent form-control">
+                    <div *ngIf="author.errors?.['required']">
+                        <span class="bg-transparent">  Author  is required.</span>
+                      </div>
+           
+            </div>
             </div>
             <div class="mb-3 ">
-                <input class="inputCurve editor bg-transparent p-2  " type="text" [(ngModel)]="quoteModel.editor" name="editor" placeholder="Enter the name of the editor ">
-
+                <input class="inputCurve editor bg-transparent p-2 form-control" type="text" [(ngModel)]="quoteModel.editor" name="editor" placeholder="Enter the name of the editor "  #editor="ngModel"required>
+                <div  *ngIf="(editor.dirty || editor.touched) && editor.invalid" class="text-danger bg-transparent form-control">
+                    <div *ngIf="editor.errors?.['required']">
+                        <span class="bg-transparent">  Editor is required.</span>
+                      </div>
+           
+            </div>
             </div>
             <div class=" d-flex justify-content-center mt-2 ">
-                <button class="btn btn-primary" type="submit" >Submit</button>
+                <button class="btn btn-primary" type="submit" [disabled]="loginForm.invalid" >Submit</button>
 
             </div>
         </div>
